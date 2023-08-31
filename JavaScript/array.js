@@ -1,22 +1,47 @@
-const transactions = [200, 300, -400, -200, 500, -300, -300, 600, -100];
+// const transactions = [200, 300, -400, -200, 500, -300, -300, 600, -100];
 
-// For of loop
+// // For of loop
 
-for (const transaction of transactions) {
-  if (transaction > 0) {
-    console.log(`Deposite is : ${transaction}`);
+// for (const transaction of transactions) {
+//   if (transaction > 0) {
+//     console.log(`Deposite is : ${transaction}`);
+//   } else {
+//     console.log(`Widthdrawel is : ${Math.abs(transaction)}`);
+//   }
+// }
+
+// // For each loop
+// console.log(`-----For each loop------`);
+
+// transactions.forEach(function (transaction) {
+//   if (transaction > 0) {
+//     console.log(`Deposite is : ${transaction}`);
+//   } else {
+//     console.log(`Widthdrawel is : ${Math.abs(transaction)}`);
+//   }
+// });
+
+const calTip = function (bill) {
+  let tip;
+  if (bill >= 0 && bill <= 500) {
+    tip = bill * (15 / 100);
+    return tip;
   } else {
-    console.log(`Widthdrawel is : ${Math.abs(transaction)}`);
+    tip = bill * (20 / 100);
+    return tip;
   }
-}
+};
 
-// For each loop
-console.log(`-----For each loop------`);
+const bills = [125, 555, 44];
+// for (const bill of bills) {
+//   const tip = calTip(bill);
+//   const total = bill + tip;
+//   console.log(`Tip is = ${tip}`);
+//   console.log(`Total bill is = ${total}`);
+// }
 
-transactions.forEach(function (transaction) {
-  if (transaction > 0) {
-    console.log(`Deposite is : ${transaction}`);
-  } else {
-    console.log(`Widthdrawel is : ${Math.abs(transaction)}`);
-  }
-});
+const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+// const total = tips[0] + tips[1] + tips[2] + bills[0] + bills[1] + bills[2];
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips);
+console.log(total);

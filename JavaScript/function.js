@@ -32,14 +32,16 @@
 // console.log(yearsLeftRetirement(1998, "ranjan"));
 // console.log(yearsLeftRetirement(1991, "paul"));
 
-const cutPieces = function (fruit) {
-  return fruit * 4;
-};
+// const cutPieces = function (fruit) {
+//   return fruit * 4;
+// };
 
-const fruitProcessor = function (apples, oranges) {
-  const applePieces = cutPieces(apples);
-  const orangePieces = cutPieces(oranges);
-  return `Juice made with ${applePieces} apple pieces and ${orangePieces} orange pieces`;
-};
+// const fruitProcessor = function (apples, oranges) {
+//   const applePieces = cutPieces(apples);
+//   const orangePieces = cutPieces(oranges);
+//   return `Juice made with ${applePieces} apple pieces and ${orangePieces} orange pieces`;
+// };
 
-console.log(fruitProcessor(5, 10));
+// console.log(fruitProcessor(5, 10));
+
+const a=[10,12,11,15]
