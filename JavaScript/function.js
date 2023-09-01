@@ -44,4 +44,30 @@
 
 // console.log(fruitProcessor(5, 10));
 
-const a=[10,12,11,15]
+// const a=[10,12,11,15]
+
+const a = "david";
+function first() {
+  const b = "is";
+  function second() {
+    const c = "Good";
+    third();
+  }
+  second();
+}
+first();
+function third() {
+  const d = "boy";
+  console.log(a + b + c + d);
+}
+
+// Execution context
+// -Global -- const a='hi', function first(), function third()
+//  -first -- const a = 'hi', const b = 'is' , function first(), function third()
+//      -second -- const a='hi', const b = 'is',  const c = 'Good', funtion first(), function third()
+//  -third -- const a= 'hi', const d = 'boy'
+
+// Call stack
+// ---first()
+//       --- second()
+//
