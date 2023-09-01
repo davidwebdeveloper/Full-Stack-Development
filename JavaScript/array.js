@@ -1,3 +1,5 @@
+"use:strict";
+
 // const transactions = [200, 300, -400, -200, 500, -300, -300, 600, -100];
 
 // // For of loop
@@ -21,18 +23,18 @@
 //   }
 // });
 
-const calTip = function (bill) {
-  let tip;
-  if (bill >= 0 && bill <= 500) {
-    tip = bill * (15 / 100);
-    return tip;
-  } else {
-    tip = bill * (20 / 100);
-    return tip;
-  }
-};
+// const calTip = function (bill) {
+//   let tip;
+//   if (bill >= 0 && bill <= 500) {
+//     tip = bill * (15 / 100);
+//     return tip;
+//   } else {
+//     tip = bill * (20 / 100);
+//     return tip;
+//   }
+// };
 
-const bills = [125, 555, 44];
+// const bills = [125, 555, 44];
 // for (const bill of bills) {
 //   const tip = calTip(bill);
 //   const total = bill + tip;
@@ -40,8 +42,18 @@ const bills = [125, 555, 44];
 //   console.log(`Total bill is = ${total}`);
 // }
 
-const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
-// const total = tips[0] + tips[1] + tips[2] + bills[0] + bills[1] + bills[2];
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(bills, tips);
-console.log(total);
+// const tips = [calTip(bills[0]), calTip(bills[1]), calTip(bills[2])];
+// // const total = tips[0] + tips[1] + tips[2] + bills[0] + bills[1] + bills[2];
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(bills, tips);
+// console.log(total);
+
+const myBrothers = ["Ranjan", "Ajith", "Paul"];
+console.log(myBrothers.push("soosai"));
+console.log(myBrothers);
+console.log(myBrothers.unshift("david"));
+console.log(myBrothers);
+
+console.log(myBrothers.shift());
+console.log(myBrothers.pop());
+console.log(myBrothers);
