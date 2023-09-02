@@ -29,43 +29,57 @@
 // console.log(david.getSummary());
 // console.log(ajith.getSummary());
 
-const mark = {
-  firstName: "Mark",
-  lastName: "Miller",
-  weight: "78",
-  height: "1.69",
-  calcBmi: function () {
-    const bmi = this.weight / (this.height * this.height);
-    return (this.bmi = bmi);
+// const mark = {
+//   firstName: "Mark",
+//   lastName: "Miller",
+//   weight: "78",
+//   height: "1.69",
+//   calcBmi: function () {
+//     const bmi = this.weight / (this.height * this.height);
+//     return (this.bmi = bmi);
+//   },
+// };
+
+// const david = {
+//   firstName: "David",
+//   lastName: "M",
+//   height: "1.95",
+//   weight: "92",
+
+//   calcBmi: function () {
+//     bmi = this.weight / (this.height * this.height);
+//     return (this.bmi = bmi);
+//   },
+// };
+
+// console.log(mark.calcBmi());
+// console.log(david.calcBmi());
+
+// console.log(david);
+
+// if (mark.bmi > david.bmi) {
+//   console.log(
+//     `${mark.firstName} ${mark.lastName}'s BMI is higer than ${david.firstName} ${david.lastName}'s BMI`
+//   );
+// } else {
+//   console.log(
+//     `${david.firstName} ${david.lastName}'s BMI is higer than ${mark.firstName} ${mark.lastName}'s BMI`
+//   );
+// }
+
+// console.log(`david BMI = ${david.bmi}`);
+// console.log(`Mark BMI = ${mark.bmi}`);
+
+const product = [
+  {
+    name: "shoe",
+    price: 500,
   },
-};
+  { name: "shirt", price: 700 },
+];
 
-const david = {
-  firstName: "David",
-  lastName: "M",
-  height: "1.95",
-  weight: "92",
+const sum = product.reduce((total, num) => {
+  return total + num.price;
+}, 0);
 
-  calcBmi: function () {
-    bmi = this.weight / (this.height * this.height);
-    return (this.bmi = bmi);
-  },
-};
-
-console.log(mark.calcBmi());
-console.log(david.calcBmi());
-
-console.log(david);
-
-if (mark.bmi > david.bmi) {
-  console.log(
-    `${mark.firstName} ${mark.lastName}'s BMI is higer than ${david.firstName} ${david.lastName}'s BMI`
-  );
-} else {
-  console.log(
-    `${david.firstName} ${david.lastName}'s BMI is higer than ${mark.firstName} ${mark.lastName}'s BMI`
-  );
-}
-
-console.log(`david BMI = ${david.bmi}`);
-console.log(`Mark BMI = ${mark.bmi}`);
+console.log(sum);
