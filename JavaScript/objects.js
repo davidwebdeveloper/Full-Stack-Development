@@ -70,16 +70,58 @@
 // console.log(`david BMI = ${david.bmi}`);
 // console.log(`Mark BMI = ${mark.bmi}`);
 
-const product = [
+//
+
+const person = [
   {
-    name: "shoe",
-    price: 500,
+    uid: 111,
+    name: "david",
+    age: 20,
+    salary: 15000,
+    gender: "male",
   },
-  { name: "shirt", price: 700 },
+  {
+    uid: 222,
+    name: "Vetrivel",
+    age: 19,
+    salary: 20000,
+    gender: "male",
+  },
+  {
+    uid: 333,
+    name: "Bharathi",
+    age: 28,
+    salary: 10000,
+    gender: "Female",
+  },
 ];
 
-const sum = product.reduce((total, num) => {
-  return total + num.price;
-}, 0);
+const user = {
+  id: 1,
+  name: "david",
+  age: "21",
+  gender: "M",
+  sal: "15000",
+};
 
+// function myFun({ sal, name }) {
+//   console.log(name);
+//   console.log(sal);
+// }
+
+// myFun(user);
+
+const sum = person.reduce((a, b) => a + b.salary, 0);
 console.log(sum);
+
+const sumDes = person.reduce((a, { salary }) => a + salary, 0);
+console.log(sumDes);
+
+const sumFemale = person
+  .filter(({ gender }) => gender == "Female")
+  .reduce((a, { salary }) => a + salary, 0);
+console.log("Female = " + sumFemale);
+const sumMale = person
+  .filter(({ gender }) => gender == "male")
+  .reduce((a, { salary }) => a + salary, 0);
+console.log("Male = " + sumMale);
