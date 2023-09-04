@@ -48,12 +48,31 @@
 // console.log(bills, tips);
 // console.log(total);
 
-const myBrothers = ["Ranjan", "Ajith", "Paul"];
-console.log(myBrothers.push("soosai"));
-console.log(myBrothers);
-console.log(myBrothers.unshift("david"));
-console.log(myBrothers);
+// const myBrothers = ["Ranjan", "Ajith", "Paul"];
+// console.log(myBrothers.push("soosai"));
+// console.log(myBrothers);
+// console.log(myBrothers.unshift("david"));
+// console.log(myBrothers);
 
-console.log(myBrothers.shift());
-console.log(myBrothers.pop());
-console.log(myBrothers);
+// console.log(myBrothers.shift());
+// console.log(myBrothers.pop());
+// console.log(myBrothers);
+
+// Destructuring
+
+// const brothers = ["david", "ajith", "ranjan", "soosai", "paul"];
+// const [a, b, c, d, e] = brothers;
+// console.log(a, b, c, d, e);
+
+const hotel = {
+  name: "krishna unavagam",
+  category: ["veg", "non-veg", "vegan"],
+  maindish: ["parota", "sapathi", "dosa"],
+  sidedish: ["kalakki", "chicken65", "omplate"],
+  order: function (a, b) {
+    return [this.maindish[a], this.sidedish[b]];
+  },
+};
+
+[mainDish, sideDish] = hotel.order(0, 1);
+console.log(mainDish, sideDish);
