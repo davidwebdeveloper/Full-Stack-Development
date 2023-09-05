@@ -64,15 +64,68 @@
 // const [a, b, c, d, e] = brothers;
 // console.log(a, b, c, d, e);
 
-const hotel = {
-  name: "krishna unavagam",
-  category: ["veg", "non-veg", "vegan"],
-  maindish: ["parota", "sapathi", "dosa"],
-  sidedish: ["kalakki", "chicken65", "omplate"],
-  order: function (a, b) {
-    return [this.maindish[a], this.sidedish[b]];
-  },
-};
+// const hotel = {
+//   name: "krishna unavagam",
+//   category: ["veg", "non-veg", "vegan"],
+//   maindish: ["parota", "sapathi", "dosa"],
+//   sidedish: ["kalakki", "chicken65", "omplate"],
+//   order: function (a, b) {
+//     return [this.maindish[a], this.sidedish[b]];
+//   },
+// };
 
-[mainDish, sideDish] = hotel.order(0, 1);
-console.log(mainDish, sideDish);
+// [mainDish, sideDish] = hotel.order(0, 1);
+// console.log(mainDish, sideDish);
+
+// Array methods
+
+// 1. push()
+// 2. pop()
+// 3. unshift()
+// 4. shift()
+
+// const brothers = ["Soosai", "ranjan", "Paul Arockiyam"];
+// brothers.unshift("Ajith");
+// brothers.unshift("david");
+// brothers.pop();
+// brothers.pop();
+// brothers.pop();
+// brothers.push("Ranjan");
+// brothers.push("Soosai");
+// brothers.push("Paul Arockiyam");
+// brothers.unshift("david");
+// brothers.shift();
+
+// // delete brothers[1];
+
+// console.log(brothers.length);
+
+// Deletion of the array
+
+// 1. Delete
+// 2. splice()
+// 3. slice()
+// 4. concat()
+
+const friends = ["pevin", "Anthony", "SivaKumar", "Raj"];
+delete friends[1];
+friends[1] = "vetrivel";
+
+friends.splice(2, 2, "pravin abdul kalam", "kalyanraman");
+friends.splice(0, 1);
+friends.splice(2, 1, "santhosh", "bhrathhi");
+friends.splice(1, 0, "Ayyanar");
+friends.splice(-1, 0, "logesh");
+
+// const newFriends = friends.slice(-2);
+
+// console.log(friends);
+// console.log(newFriends);
+
+// console.log(friends);
+
+friends.forEach((item) => console.log(item));
+
+friends.forEach((item, index, array) => {
+  console.log(`${item} at the index ${index} in [${array}]`);
+});
