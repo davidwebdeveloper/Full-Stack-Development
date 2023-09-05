@@ -20,6 +20,7 @@ html {
 body {
   background-color: var(--secondary-color);
   font-size: 110%;
+  /* position: relative; */
 }
 
 section.intro {
@@ -67,4 +68,82 @@ div.summary p:last-child {
   margin-top: 1em;
   padding-top: 1.5em;
   border-top: 1px solid #ec4848;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--red-color);
+}
+
+.preamble {
+  background-color: white;
+  color: var(--tertiary-color);
+  margin-left: -30%;
+  padding: 5% 5% 5% 30%;
+}
+
+.preamble h3 {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+.preamble p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.main {
+  padding: 0 5%;
+  color: white;
+  background-color: black;
+  clear: both;
+}
+
+.participation {
+  background-color: var(--red-color);
+  width: 50%;
+  padding: 5%;
+  /* display: block; */
+  float: right;
+  line-height: 1.5;
+}
+.explanation {
+  /* background-color: #ec4848; */
+  width: 50%;
+  padding: 5%;
+  /* display: block; */
+  float: left;
+  line-height: 1.5;
+  /* background-color: yellowgreen; */
+}
+
+.main div h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.main div p {
+  padding: 0.5em 0;
+}
+
+.benefits {
+  /* margin-top: 15%; */
+  clear: right;
+  width: 30%;
+  float: left;
+  background-color: white;
+  color: #394553;
+  padding: 5%;
+}
+
+.requirements {
+  /* margin-top: 15%; */
+  clear: both;
+  width: 70%;
+  float: right;
 }
