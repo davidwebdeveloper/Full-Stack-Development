@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap");
+
 :root {
   --primary-color: #daede2;
   --secondary-color: #77c4d3;
@@ -20,8 +22,14 @@ html {
 body {
   background-color: var(--secondary-color);
   font-size: 110%;
+  padding-bottom: 5%;
+  height: 100%;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 
-  /* position: relative; */
+  position: relative;
+  z-index: 1;
 }
 
 section.intro {
@@ -31,7 +39,8 @@ section.intro {
 }
 
 .intro header h1 {
-  font-weight: 300;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-weight: 700; */
   text-transform: uppercase;
   background-color: #ec4848;
   color: #fff;
@@ -45,6 +54,7 @@ section.intro {
   font-weight: 900;
   line-height: 1em;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
 div.summary {
@@ -96,6 +106,8 @@ a:hover {
 .main {
   padding: 0 5%;
   color: white;
+  position: relative;
+  z-index: 3;
 }
 
 .main div h3 {
@@ -115,11 +127,12 @@ a:hover {
 }
 
 .participation {
-  background-color: var(--red-color);
+  background-color: rgba(234, 46, 73, 0.9);
   float: right;
   width: 50%;
   padding: 5%;
   line-height: 1.5;
+  z-index: 4;
 }
 
 .benefits {
@@ -138,7 +151,7 @@ a:hover {
   float: right;
   padding: 5%;
   line-height: 1.5;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #333;
 }
 
@@ -156,7 +169,7 @@ a:hover {
 
 footer {
   clear: both;
-  float: leftr;
+  /* float: leftr; */
   width: 50%;
   padding: 1em;
   background-color: #e9f298;
@@ -167,4 +180,48 @@ footer {
 footer a {
   color: #333;
   margin-left: 1em;
+}
+
+aside {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  /* bottom: 5%; */
+  background-color: rgba(246, 247, 146, 0.9);
+  width: 30%;
+  padding: 5%;
+  z-index: 2;
+}
+
+aside h3 {
+  font-size: 2.25em;
+  padding: 0.5em 0 0.25em 0;
+  line-height: 1em;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+aside ul {
+  list-style: none;
+
+  /* padding: 0.5em 0 2em 0; */
+}
+
+aside ul li {
+  margin-left: 1em;
+  padding: 0.5em 0;
+}
+
+aside ul a {
+  color: #333;
+}
+
+.extra1 {
+  width: 30%;
+  /* height: 100%; */
+  background-color: rgba(51, 55, 69, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1;
 }
