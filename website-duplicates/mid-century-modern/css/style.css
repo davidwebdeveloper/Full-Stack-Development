@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #0d2c40;
+  --secondary-color: #ed5a36;
+  --teritary-color: #53c2d9;
+  --background-rose: #c879b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-rose);
+  /* padding: 1em; */
+  position: relative;
+}
+
+.intro {
+  width: 100%;
+  background-color: #f6efe5;
+}
+
+header {
+  background-color: var(--background-rose);
+  height: 50em;
+  width: 40%;
+  float: left;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.2em;
+  position: absolute;
+  transform: rotate(-90deg);
+  margin-left: 1em;
+  top: 4.2em;
+  left: -2.5em;
+  font-weight: 600;
+  color: white;
+}
+
+header h2 {
+  font-size: 2em;
+  color: aliceblue;
+  position: relative;
+  background: var(--primary-color) url(../css/icon-star.svg) no-repeat bottom
+    left;
+  background-size: 100%;
+  /* background: url(../css/icon-star.svg) no-repeat left bottom; */
+  width: 50%;
+  float: right;
+  height: 100%;
+  padding: 6.5em 0 0 0.5em;
+}
+
+.summary {
+  padding: 16.3em 2em 10em 2em;
+  float: right;
+  height: 50em;
+  width: 60%;
+  background: var(--background-rose) url(../css/icons-3-pack.svg) no-repeat
+    bottom left;
+  background-size: 100%;
+}
+
+.summary p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-right: 12rem;
+  margin-bottom: 2em;
+  color: white;
+}
+
+.summary p a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.summary p a:hover {
+  color: #0d2c40;
+  border-bottom: 1px solid #0d2c40;
+
+  transition-duration: 0.5s;
+}
+
+.preamble {
+  clear: both;
+  width: 60%;
+
+  margin-left: 20%;
+  padding: 8em 0 32em 0.5em;
+  font-size: 1.2em;
+  position: relative;
+}
+
+.preamble h3,
+.preamble p {
+  width: 66.66%;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  /* float: left; */
+}
+
+.preamble p:last-child {
+  line-height: 1.5;
+  width: 33.33%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8em 1em 20em 1em;
+  background-color: rgba(0, 188, 217, 0.8);
+  color: white;
+}
+
+.main {
+  clear: both;
+}
