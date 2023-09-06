@@ -1,12 +1,7 @@
 const word = ["david", "vetrivel", "vetrivel"];
-let myObj = {};
-word.map(count);
+let myArr = {};
+word.map((e) => {
+  myArr[e] = myArr[e] + 1 || 1;
+});
 
-const count = function (e) {
-  for (i = 0; i < word.length; i++) {
-    if (word[i] == e) {
-      count++;
-    }
-  }
-  return count;
-};
+console.log(myArr);
