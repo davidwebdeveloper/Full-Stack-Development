@@ -1,4 +1,3 @@
-const newObj = {};
 const product = [
   {
     name: "chocolate",
@@ -11,5 +10,9 @@ const product = [
   },
 ];
 
-product.map((e) => (newObj[e.category] = e));
-console.log(newObj);
+const b = product.map((e) => {
+  const newObj = {};
+  newObj[e.category] = e;
+  return newObj;
+});
+console.log(b);

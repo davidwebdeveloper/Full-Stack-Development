@@ -1,8 +1,7 @@
-const str = ["apple", "orange", "apple", "orange"];
+const str = ["apple", "orange", "apple", "orange", "banana"];
 
-str.filter((e, index, arr) => {
-  console.log(arr.indexOf(e));
-  console.log(`index = ${index}`);
-  console.log("---");
-  return arr.indexOf(e);
+const newStr = str.filter((e, index, arr) => {
+  return arr.indexOf(e) == index;
 });
+
+console.log(newStr);
