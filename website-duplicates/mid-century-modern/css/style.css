@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/meta-pro");
+
 :root {
   --primary-color: #0d2c40;
   --secondary-color: #ed5a36;
@@ -12,9 +14,11 @@
 }
 
 body {
-  background-color: var(--background-rose);
+  background-color: #f6efe5;
   /* padding: 1em; */
   position: relative;
+  font-family: "Meta Pro", sans-serif;
+  color: #333;
 }
 
 .intro {
@@ -31,7 +35,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.2em;
+  font-size: 1em;
   position: absolute;
   transform: rotate(-90deg);
   margin-left: 1em;
@@ -42,8 +46,9 @@ header h1 {
 }
 
 header h2 {
-  font-size: 2em;
+  font-size: 250%;
   color: aliceblue;
+  line-height: 1.25em;
   position: relative;
   background: var(--primary-color) url(../css/icon-star.svg) no-repeat bottom
     left;
@@ -52,7 +57,7 @@ header h2 {
   width: 50%;
   float: right;
   height: 100%;
-  padding: 6.5em 0 0 0.5em;
+  padding: 6em 0 0 0.5em;
 }
 
 .summary {
@@ -66,9 +71,9 @@ header h2 {
 }
 
 .summary p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
-  padding-right: 12rem;
+  padding-right: 40%;
   margin-bottom: 2em;
   color: white;
 }
@@ -91,7 +96,7 @@ header h2 {
   width: 60%;
 
   margin-left: 20%;
-  padding: 8em 0 32em 0.5em;
+  padding: 8em 0 10em 0.5em;
   font-size: 1.2em;
   position: relative;
 }
@@ -113,8 +118,136 @@ header h2 {
   padding: 8em 1em 20em 1em;
   background-color: rgba(0, 188, 217, 0.8);
   color: white;
+  z-index: 2;
 }
 
 .main {
   clear: both;
+  background: url(../css/mid-century-1.jpg) no-repeat center center;
+  background-size: cover;
+  font-size: 1rem;
+  /* top: -20px; */
+  z-index: 1;
+  position: relative;
+  padding-top: 400px;
+  /* padding-bottom: 100px; */
+}
+
+/* .explanation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0d2c40 url(../css/icon-half.svg) no-repeat;
+  background-size: 40%;
+  background-position: right center;
+  width: 40%;
+  color: white;
+  font-size: 1.2rem;
+  padding: 2em;
+  /* height: 800px; */
+/* } */
+
+.explanation {
+  position: relative;
+  background-color: var(--primary-color);
+  background: #0d2c40 url(../css/icon-half.svg) no-repeat;
+  background-size: 30%;
+  background-position: right center;
+  color: white;
+  width: 40%;
+  padding: 2em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.explanation h3 {
+  margin-bottom: 1em;
+  transform: rotate(-90deg);
+  position: absolute;
+  padding: 2em;
+  top: 6em;
+  left: -8.5%;
+}
+
+.explanation p {
+  margin: 1em 6em 1em 1em;
+  padding-left: 4em;
+}
+
+.participation {
+  background-color: #f6efe5;
+  width: 40%;
+  padding: 1em;
+  position: absolute;
+  margin-top: 14em;
+  right: 40%;
+}
+
+.participation h3 {
+  margin-bottom: 1.5rem;
+}
+.participation p {
+  line-height: 1.5;
+  /* padding: 1em; */
+  margin-bottom: 1.5rem;
+}
+
+.benefits {
+  position: absolute;
+  right: 20%;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 22em;
+  padding-bottom: 25em;
+  background: #53c2d9 url(../css/icon-circles.svg) no-repeat;
+  background-size: 80%;
+  background-position: top center;
+  width: 20%;
+}
+
+.benefits h3 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.benefits p {
+  line-height: 1.3;
+}
+
+.requirements {
+  background-color: #f6efe5;
+  margin-top: 60em;
+  padding-left: 3em;
+  width: 60%;
+  /* position: absolute; */
+  position: absolute;
+  right: 0;
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+.requirements h3 {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 5rem;
+  left: -12%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.requirements p {
+  font-size: 1rem;
+  line-height: 2;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* width: 50%; */
+}
+
+.requirements::before {
+  content: "";
+  background: url("/website-duplicates/mid-century-modern/css/mid-century-2.jpg");
+  position: absolute;
+  height: 40em;
+  width: 60%;
+  left: -60%;
 }
